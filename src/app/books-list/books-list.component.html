@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Titulo</th>
+        <th scope="col">Autor</th>
+        <th scope="col">Editora</th>
+        <th scope="col">Area</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of booksList">
+          <td>{{book.titulo}}</td>
+          <td>{{book.autor}}</td>
+          <td>{{book.editora}}</td>
+          <td>{{book.area}}</td>
+          <td><a href="#">Editar</a><a href="#">Deletar</a></td>
+      </tr>
+    </tbody>
+  </table>
